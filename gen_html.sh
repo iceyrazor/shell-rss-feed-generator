@@ -1,5 +1,4 @@
 content="$(./hoedown --hard-wrap $1 | sed -e 's/&/\\\\&/g')"
-printf "$content\n\n\n\n---------------\n\n\n\n"
 #content=$(printf "%q" $content)
 title=$(cat $1 | head -n 1 | sed 's/# //' | sed -e 's/\r//g')
 file=$(printf "$1" | sed 's/\.md$//' | sed 's/^\.\///')
