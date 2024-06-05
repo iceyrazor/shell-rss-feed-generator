@@ -1,0 +1,19 @@
+html{
+	background-color: #303030;
+	color: white;
+}
+
+.static-main h1{
+	color: #ff8080;
+	font-size: 30px;
+}
+
+.static-main a{
+	text-decoration: none;
+	color: #0090f8;
+}
+
+.rss_img{
+	width: 20px;
+	height: 20px;
+}

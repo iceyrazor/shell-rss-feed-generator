@@ -1,0 +1,6 @@
+url:
+prime_folder:static
+post:updates
+ftp:
+user:
+discord_webhook:
