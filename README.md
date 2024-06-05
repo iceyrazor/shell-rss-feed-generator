@@ -1,5 +1,5 @@
 # hi
-this is just a personal project i made to generate and push to my static pages and rss feed at http://iceyfox.x10host.com/
+this is just a personal project i made to generate and push to my static pages and rss feed at http://iceyfox.x10host.com/ and post to discord webhook
 
 this isnt perfect and does require manual intervention. for instance. if you need to edit a post. you have to delete it from the rss feed aka the xml file. else you will have duplicates.
 
