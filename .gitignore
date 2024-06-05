@@ -1,6 +1,6 @@
-./src/**
-./src
-./static/**
-./*.md
-./hoedown
-./config.txt
+src/**
+src
+static/**
+*.md
+hoedown
+config.txt
