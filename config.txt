@@ -1,6 +1,0 @@
-url:http://iceyfox.x10host.com
-prime_folder:static
-post:blog
-ftp:x14.x10hosting.com
-user:iceyfoxx
-discord_webhook:https://discord.com/api/webhooks/1245280182772695071/yfYxfALcshaxo1cl7uo5X-3RqD5pxOCveVr1jDv8SVfQMupwbqDitotYN3M90Gny_Ias
