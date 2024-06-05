@@ -31,3 +31,10 @@ for this ill use test.md as a example
 - run ``gen_html.sh ./test.md`` and check static/post/list/filename/index.html
 - if you have a discord webhook and thats config'd run ``push_discord_webhook.sh ./test.md`` and check your webhook channel
 - run rss\_push.sh or upload files to your webserver
+
+# todo
+- replace ``sed '/^post:/!d' | sed 's/^post://'`` with ``awk 'gsub(/^post:/,"")'``
+- do
+```shell
+f_out=$(awk -v content="$content" -v post="$url/$prime_folder/$post" -v date="$(date '+%B %m/%d/%Y %I:%M%p')" '{gsub("<PAGE_CONTENT>",content); gsub("<PAGE_URL>",post); gsub("<DATE_POST>",date); print}' ./template/page.htmld)
+```
