@@ -6,3 +6,4 @@ hoedown
 config.txt
 !test.md
 !README.md
+.clangd
