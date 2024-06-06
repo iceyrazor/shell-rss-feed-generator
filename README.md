@@ -33,8 +33,4 @@ for this ill use test.md as a example
 - run rss\_push.sh or upload files to your webserver
 
 # todo
-- replace ``sed '/^post:/!d' | sed 's/^post://'`` with ``awk 'gsub(/^post:/,"")'``
-- do
-```shell
-f_out=$(awk -v content="$content" -v post="$url/$prime_folder/$post" -v date="$(date '+%B %m/%d/%Y %I:%M%p')" '{gsub("<PAGE_CONTENT>",content); gsub("<PAGE_URL>",post); gsub("<DATE_POST>",date); print}' ./template/page.htmld)
-```
+- somthing i dont remember

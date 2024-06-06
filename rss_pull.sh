@@ -1,9 +1,9 @@
 config=$(cat ./config.txt)
-url=$(printf "$config" | sed '/^url:/!d' | sed 's/^url://' );
-prime_folder=$(printf "$config" | sed '/^prime_folder:/!d' | sed 's/^prime_folder://' );
-post=$(printf "$config" | sed '/^post:/!d' | sed 's/^post://' );
-ftp=$(printf "$config" | sed '/^ftp:/!d' | sed 's/^ftp://' );
-user=$(printf "$config" | sed '/^user:/!d' | sed 's/^user://' );
+url=$(printf "$config" | awk 'gsub(/^url:/,"")');
+prime_folder=$(printf "$config" | awk 'gsub(/^prime_folder:/,"")');
+post=$(printf "$config" | awk 'gsub(/^post:/,"")');
+ftp=$(printf "$config" | awk 'gsub(/^ftp:/,"")');
+user=$(printf "$config" | awk 'gsub(/^user:/,"")');
 
 cd static
 rm static-style.css
