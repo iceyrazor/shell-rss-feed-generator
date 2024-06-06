@@ -30,7 +30,9 @@ for this ill use test.md as a example
 - run ``gen_xml.sh ./test.md`` and check static/post/index.xml
 - run ``gen_html.sh ./test.md`` and check static/post/list/filename/index.html
 - if you have a discord webhook and thats config'd run ``push_discord_webhook.sh ./test.md`` and check your webhook channel
-- run rss\_push.sh or upload files to your webserver
+- run rss\_push.sh ./test.md or upload files to your webserver
+if ./test.md or file isnt defined it wont add the posting file, instead it will just update the existing files.
 
 # todo
 - somthing i dont remember
+- error checking. mainly input file checking.

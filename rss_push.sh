@@ -7,12 +7,31 @@ ftp=$(printf "$config" | awk 'gsub(/^ftp:/,"")');
 user=$(printf "$config" | awk 'gsub(/^user:/,"")');
 
 
-if [ "$1" == "" ]; then
-    echo file not defined.
-fi
-
 read -s -p "ftp_password: " pass
 printf "\n\n"
+
+if [ "$1" == "" ]; then
+
+#upload only index.xml/html listing and other assets
+ftp -n <<EOF
+open $ftp
+user $user $pass 
+
+cd public_html
+mkdir $prime_folder
+cd $prime_folder
+lcd $prime_folder
+
+put static-style.css
+
+mkdir $post
+cd $post
+lcd $post
+put index.xml
+put index.html
+EOF
+
+else
 
 ftp -n <<EOF
 open $ftp
@@ -39,3 +58,5 @@ cd $file
 lcd list/$file
 put index.html
 EOF
+
+fi
