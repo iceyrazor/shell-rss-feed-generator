@@ -5,11 +5,11 @@ post=$(printf "$config" | awk 'gsub(/^post:/,"")');
 ftp=$(printf "$config" | awk 'gsub(/^ftp:/,"")');
 user=$(printf "$config" | awk 'gsub(/^user:/,"")');
 
-cd static
+cd $prime_folder
 rm static-style.css
 wget $url/$prime_folder/static-style.css
 
-cd updates
+cd $post
 rm index.html
 wget $url/$prime_folder/$post/
 
